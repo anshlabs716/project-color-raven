@@ -1,0 +1,6 @@
+# Recorded 2026-11-20 during Stage 2 audit (read-only)
+# Donor inner ZIP (985c20bef2bd46aeb9fd3abddb71b763.zip, stored inside outer zip)
+0f9bdd0afa39c7dbd0687100a2a80bbdf68ab0f74fc766dd8cc2047ee9011742  oneplus15_inner_firmware.zip  # VERIFIED match vs FWAtlas.com.txt
+# LineageOS payload properties (from package)
+FILE_HASH=M4+/P2ImVKz7hzLgZNmi9gOfhoA091t43PW8TcPQyzM=  # payload.bin (base64 sha256)
+METADATA_HASH=PE1Xq4DQ42nFkQma2K8uUSC7fpGsCmDjI5osnvfAN0o=
