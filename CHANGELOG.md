@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-11-20 — **v0.1 BUILD ASSEMBLED** (first installable package)
+
+- Built `build/out/project-color-raven-v0.1-raven.zip` (3.78 GB, integrity-tested):
+  - **Foundation (LineageOS 24 nightly, hash-verified):** boot, dtbo, vendor_boot,
+    vbmeta ×3, vendor, vendor_dlkm (Tensor GS101 HALs + 323 modules)
+  - **Userspace (ColorOS 17 donor, byte-identical, EROFS):** system, system_ext, product
+  - **Addon:** complete GCam split package (base + 30 splits, minSdk 37, arm64-v8a)
+    in `extras/gcam/splits/` — NOT auto-installed (vanilla policy)
+  - `flash-all.sh` / `flash-all.bat`: raven + unlocked gates, typed confirmation,
+    two-stage flash (bootloader → fastbootd), **zero wipe/erase/format commands**
+- **Compatibility verification (Stage 5, evidence-based)** — see
+  `reports/stage5-compatibility-matrix.md`:
+  - raven kernel = GKI **6.1.162-android14**; decompressed kernel (35.7 MB) and
+    **confirmed EROFS built-in** → donor EROFS images mountable
+  - super capacity parsed from `super_empty.img`: group max ≈ 8.53 GiB,
+    base usage 4.42 GiB → **≈ 3.8 GiB headroom** (donor system_ext growth fits)
+  - donor & base both Android 17 / SDK 37 / SPL 2026-11-01
+  - AVB: root vbmeta flags=3; vbmeta_system/vendor flags=0 → flash with
+    `--disable-verity --disable-verification` (in scripts); never re-lock bootloader
+  - signing: full-donor userspace is internally key-consistent (mixing donor
+    priv-apps into LineageOS userspace ruled out)
+- **Porting architecture documented (Stage 6)** — `reports/stage6-porting-architecture.md`:
+  release ladder v0.1→v1.0, v0.2 EROFS repack pipeline (mkfs.erofs --file-contexts),
+  failure→response table
+- Build report: `reports/build/v0.1-build-report.md`
+- GCam verified compatible (static): package/SDK/ABI checked; camera function
+  pending on-device test
+- Blockers logged: APK signing-block cert parser incomplete; web search provider
+  down all session (all evidence first-party)
+- **No device commands executed. Phone untouched.**
+
 ## 2026-11-20 — Project initialization (read-only audit)
 
 - Created workspace `/home/ansh/work/project-color-raven`.
