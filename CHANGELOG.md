@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-11-21 — **v0.2 BUILD ASSEMBLED** (sideload package)
+
+- Built `build/out/project-color-raven-v0.2-raven-sideload.zip` (3.04 GB) —
+  recovery-native A/B OTA package (`adb sideload`), images identical to v0.1
+  (donor userspace as-is + LineageOS foundation; no repack)
+- Wrote `tools/build/gen_payload.py`: CrAU v2 payload generator (unsigned,
+  minor_version=8, REPLACE ops 64 MiB, global data_offset, per-op sha256,
+  dynamic_partition_metadata for super resize)
+- Bug found by self-test & fixed: `data_offset` is global across partitions —
+  per-partition reset made dtbo fail (read boot's bytes)
+- Format ground truth verified against the real LineageOS signed OTA:
+  METADATA_SIZE = 24 + manifest_size; METADATA_HASH = sha256(header+manifest)
+- Self-test: independent parser (payload_dumper) verified ALL 11 partitions
+  op-by-op and image-by-image against sources — ALL PASS
+- Wrote `tools/build/make_sideload_zip.py`: hand-rolled stored zip (zipfile
+  streaming hits 3 GB guard; auto-extras broke offsets) with exact
+  ota-property-files offsets verified by PK-magic probe; `unzip -t` clean
+- Install flow: sideload → factory reset (FBE fix for reported symptom (b)) → reboot
+- **No device commands executed. Phone untouched.**
+
 ## 2026-11-20 — **v0.1 BUILD ASSEMBLED** (first installable package)
 
 - Built `build/out/project-color-raven-v0.1-raven.zip` (3.78 GB, integrity-tested):
