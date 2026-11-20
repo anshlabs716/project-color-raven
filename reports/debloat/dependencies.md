@@ -2,23 +2,14 @@
 
 Packages needing manual manifest/dependency review, plus Qualcomm-bound packages replaced by base equivalents.
 
-Total: **69** packages
+Total: **60** packages
 
 | Package | Class | Location | Justification |
 |---|---|---|---|
 | `com.android.avatarpicker` | INVESTIGATE | `system_ext/priv-app/AvatarPicker/AvatarPicker.apk` | Purpose/dependencies unclear — manual manifest review required |
 | `com.android.bluetooth.oplus.overlay` | INCOMPATIBLE | `system_ext/overlay/OplusBluetoothResource.apk` | Qualcomm/SoC-specific; raven uses Tensor vendor — base (LineageOS) equivalent must be used instead |
 | `com.android.intentresolver` | INVESTIGATE | `system/system/priv-app/IntentResolver/IntentResolver.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.display.cutout.emulation.corner` | INVESTIGATE | `product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.display.cutout.emulation.double` | INVESTIGATE | `product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.display.cutout.emulation.hole` | INVESTIGATE | `product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.display.cutout.emulation.tall` | INVESTIGATE | `product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.display.cutout.emulation.waterfall` | INVESTIGATE | `product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.systemui.navbar.gestural` | INVESTIGATE | `product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.systemui.navbar.threebutton` | INVESTIGATE | `product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.internal.systemui.navbar.transparent` | INVESTIGATE | `product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
 | `com.android.statementservice` | INVESTIGATE | `product/priv-app/StatementService/StatementService.apk` | Purpose/dependencies unclear — manual manifest review required |
-| `com.android.theme.font.notoserifsource` | INVESTIGATE | `product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk` | Purpose/dependencies unclear — manual manifest review required |
 | `com.fido.asm` | INVESTIGATE | `system_ext/app/FidoAsm/FidoAsm.apk` | Purpose/dependencies unclear — manual manifest review required |
 | `com.fido.uafclient` | INVESTIGATE | `system_ext/app/UAFClient/UAFClient/UAFClient.apk` | Purpose/dependencies unclear — manual manifest review required |
 | `com.microsoftsdk.crossdeviceservicebroker` | INVESTIGATE | `system/system/app/CrossDeviceServiceBroker/CrossDeviceServiceBroker.apk` | Purpose/dependencies unclear — manual manifest review required |

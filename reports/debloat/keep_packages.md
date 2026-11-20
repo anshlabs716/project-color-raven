@@ -2,7 +2,7 @@
 
 Core ColorOS + Android foundation + AI/Fluid Cloud components. **No package has been removed.** Awaiting owner approval.
 
-Total: **144** packages
+Total: **153** packages
 
 | Package | Class | Location | Justification |
 |---|---|---|---|
@@ -43,6 +43,14 @@ Total: **144** packages
 | `com.android.eyedropper` | KEEP | `system/system/priv-app/EyeDropper/EyeDropper.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.htmlviewer` | KEEP | `system_ext/app/HTMLViewer/HTMLViewer.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.inputdevices` | KEEP | `system/system/priv-app/InputDevices/InputDevices.apk` | Core ColorOS/Android foundation (policy §E/§H) |
+| `com.android.internal.display.cutout.emulation.corner` | KEEP | `product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.display.cutout.emulation.double` | KEEP | `product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.display.cutout.emulation.hole` | KEEP | `product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.display.cutout.emulation.tall` | KEEP | `product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.display.cutout.emulation.waterfall` | KEEP | `product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.systemui.navbar.gestural` | KEEP | `product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.systemui.navbar.threebutton` | KEEP | `product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
+| `com.android.internal.systemui.navbar.transparent` | KEEP | `product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
 | `com.android.keychain` | KEEP | `system_ext/app/KeyChain/KeyChain.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.launcher` | KEEP | `system_ext/priv-app/OplusLauncher/OplusLauncher.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.localtransport` | KEEP | `system/system/priv-app/LocalTransport/LocalTransport.apk` | Core ColorOS/Android foundation (policy §E/§H) |
@@ -94,6 +102,7 @@ Total: **144** packages
 | `com.android.systemui` | KEEP | `system_ext/priv-app/SystemUI/SystemUI.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.systemui.accessibility.accessibilitymenu` | KEEP | `system_ext/app/AccessibilityMenu/AccessibilityMenu.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.systemui.overlay.common` | KEEP - DEPENDENCY | `product/overlay/SystemUIResCommon_Sys.apk` | Resource overlay — required by target component |
+| `com.android.theme.font.notoserifsource` | KEEP | `product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk` | Standard AOSP overlay/resource (policy §H) |
 | `com.android.traceur` | KEEP | `system/system/app/Traceur/Traceur.apk` | Core ColorOS/Android foundation (policy §E/§H) |
 | `com.android.uwb.resources.overlay.common` | KEEP - DEPENDENCY | `product/overlay/UwbResCommon_Sys.apk` | Resource overlay — required by target component |
 | `com.android.vpndialogs` | KEEP | `system_ext/priv-app/VpnDialogs/VpnDialogs.apk` | Core ColorOS/Android foundation (policy §E/§H) |

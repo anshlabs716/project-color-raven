@@ -165,6 +165,16 @@ def classify(pkg: str) -> tuple[str, str]:
     for pat in KEEP_PATTERNS:
         if re.match(pat, pkg):
             return KEEP, "Core ColorOS/Android foundation (policy §E/§H)"
+    # Standard AOSP overlays (cutout emulation, navbar, fonts) — KEEP
+    AOSP_OVERLAY_PATTERNS = [
+        r"^com\.android\.internal\.display\.cutout\.emulation\.",
+        r"^com\.android\.internal\.systemui\.navbar\.",
+        r"^com\.android\.theme\.font\.",
+        r"^com\.android\.role\.notes", r"^com\.android\.modulemetadata$",
+    ]
+    for pat in AOSP_OVERLAY_PATTERNS:
+        if re.match(pat, pkg):
+            return KEEP, "Standard AOSP overlay/resource (policy §H)"
     # overlays and resource packages are dependency-ish
     if ".overlay" in pkg or pkg.endswith(".rro") or "auto_generated" in pkg:
         return KEEP_DEP, "Resource overlay — required by target component"
