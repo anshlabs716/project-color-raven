@@ -3,6 +3,8 @@
 Porting **ColorOS 17** (OnePlus 15, PLK110, China) onto the **Google Pixel 6 Pro (raven)**
 on top of a **LineageOS 24 / Android 17** base — as a real ROM, not a theme.
 
+> porting color os 17 from oneplus 15 to pixel 6 pro (raven)
+
 | | |
 |---|---|
 | **Target device** | Google Pixel 6 Pro (raven), Tensor GS101 |
@@ -80,3 +82,7 @@ Large firmware archives and extracted partition images are **never** committed;
 9. **Stage 9 — Release preparation**
 
 See `DEVELOPMENT_PLAN.md` for the current step.
+
+## License
+
+GPL-3.0 (see `LICENSE`).

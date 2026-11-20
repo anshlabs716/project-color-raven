@@ -1,4 +1,4 @@
-# Never commit firmware / large binaries
+# ---- Project Color Raven rules (large firmware / binaries: never commit) ----
 *.zip
 *.bin
 *.img
@@ -24,14 +24,42 @@ donor/partitions/
 base/extracted/
 base/partitions/
 
-# Editor / OS noise
+# ---- Android Studio / Gradle (from GitHub template) ----
+.gradle/
+.kotlin/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio generated files and folders
+captures/
+.externalNativeBuild/
+.cxx/
+*.aab
+output-metadata.json
+
+# IntelliJ
+*.iml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Google Profiling
+*.hprof
+
+# ---- Editor / OS noise ----
 .DS_Store
 *.swp
 .idea/
 .vscode/
 
 # Secrets — never
-*.keystore
-*.jks
 *.pem
 .env
