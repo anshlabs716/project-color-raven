@@ -26,6 +26,18 @@ minimal repo set, then propose a concrete storage plan to the owner before any
 Inspection showed it is an unrelated PlatformIO firmware project (boards/pcbs/
 platformio.ini), not Pixel firmware. Recorded so nobody mistakes it for input.
 
+## D7 — Vanilla build: no GMS (2026-11-20, owner directive)
+The ROM must ship **without Google Mobile Services**: no Play services, no Play
+Store, no GMS core apps or their framework hooks. Consequences to design around:
+- Notification push: no FCM — apps must use self-hosted/UnifiedPush/long-lived
+  alternatives where they care about push.
+- Location: no Google network location (NLP) — GPS + fused alternatives only;
+  consider Mozilla/DECDN-backed NLP only if owner approves later.
+- Compatibility checks: no SafetyNet/Play integrity expectations.
+- ColorOS CN apps that embed GMS dependencies must be audited (Stage 3/5).
+microG or any GMS substitute is NOT installed automatically (see app policy:
+nothing extra without owner approval).
+
 ## D6 — `fwmanifest.xml` is mislabeled (2026-11-20)
 Despite the name, it is a framework `AndroidManifest.xml` dump (protected
 broadcasts etc.), not a firmware manifest. Kept as reference material only.

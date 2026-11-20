@@ -21,6 +21,11 @@ fully working: cellular, Wi-Fi, Bluetooth, NFC, GPS, cameras, fingerprint,
 audio, charging, sensors, suspend/resume — plus ColorOS UI, system apps,
 Fluid Cloud, AI features, and English-first international usability.
 
+**Vanilla build: NO GMS.** No Google Play services, no Play Store, no Google
+account infrastructure, no GMS-backed apps. The ROM ships without any Google
+mobile services; push/location/notification backends must work without them
+(microG is *not* auto-installed — anything extra is owner-approved only).
+
 ## Hard rules (project policy)
 
 - **No device flashing without explicit owner approval.** No fastboot flash/erase,
