@@ -1,0 +1,215 @@
+com.android.modulemetadata		37		0		product/app/ModuleMetadata/ModuleMetadata.apk
+com.qualcomm.uimremoteclient		37		3		product/app/uimremoteclient/uimremoteclient.apk
+com.qualcomm.uimremoteserver		37		1		product/app/uimremoteserver/uimremoteserver.apk
+com.android.carrierconfig.overlay.common		37		0		product/overlay/CarrierConfigResCommon_Sys.apk
+com.android.cellbroadcastreceiver.overlay.common		37		0		product/overlay/CellBroadcastReceiverResCommon_Sys.apk
+com.android.companiondevicemanager.auto_generated_characteristics_rro		37		0		product/overlay/CompanionDeviceManager__nosdcard__auto_generated_characteristics_rro.apk
+com.android.internal.display.cutout.emulation.corner		1		0		product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
+com.android.internal.display.cutout.emulation.double		1		0		product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
+com.android.internal.display.cutout.emulation.hole		1		0		product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
+com.android.internal.display.cutout.emulation.tall		1		0		product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
+com.android.internal.display.cutout.emulation.waterfall		1		0		product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk
+com.android.theme.font.notoserifsource		1		0		product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk
+android.auto_generated_characteristics_rro		37		0		product/overlay/framework-res__nosdcard__auto_generated_characteristics_rro.apk
+android.overlay.common		37		0		product/overlay/FrameworksResCommon_Sys.apk
+com.qti.overlay.framework.nonmodem		37		0		product/overlay/FrameworksResNonModem_Sys.apk
+com.android.internal.systemui.navbar.threebutton		1		0		product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+com.android.internal.systemui.navbar.gestural		1		0		product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+com.gms.android.ncm.overlay.common		37		0		product/overlay/NcmTetheringResCommonGMS_Sys.apk
+com.android.ncm.overlay.common		37		0		product/overlay/NcmTetheringResCommon_Sys.apk
+com.android.nfc.resources.overlay.common		37		0		product/overlay/NfcResCommon_Sys.apk
+com.android.role.notes.enabled		1		0		product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
+com.android.carrierconfig.oplus.overlay		37		0		product/overlay/OplusCarrierConfig.apk
+com.android.settings.overlay.common		37		0		product/overlay/SettingsResCommon_Sys.apk
+com.android.systemui.overlay.common		37		0		product/overlay/SystemUIResCommon_Sys.apk
+com.android.server.telecom.overlay.common		37		0		product/overlay/TelecommResCommon_Sys.apk
+com.android.providers.telephony.auto_generated_characteristics_rro		37		0		product/overlay/TelephonyProvider__nosdcard__auto_generated_characteristics_rro.apk
+com.android.phone.overlay.common		37		0		product/overlay/TelephonyResCommon_Sys.apk
+com.android.phone.auto_generated_characteristics_rro		37		0		product/overlay/TeleService__nosdcard__auto_generated_characteristics_rro.apk
+com.android.internal.systemui.navbar.transparent		1		0		product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk
+com.google.android.uwb.resources.overlay.common		1		0		product/overlay/UwbResCommonMainline_Sys.apk
+com.android.uwb.resources.overlay.common		1		0		product/overlay/UwbResCommon_Sys.apk
+com.google.android.wifi.resources.overlay.common		37		0		product/overlay/WifiResCommonMainline_Sys.apk
+com.android.wifi.resources.overlay.common		37		0		product/overlay/WifiResCommon_Sys.apk
+com.android.statementservice		1		11		product/priv-app/StatementService/StatementService.apk
+com.android.systemui.accessibility.accessibilitymenu		37		3		system_ext/app/AccessibilityMenu/AccessibilityMenu.apk
+com.qualcomm.atfwd		37		11		system_ext/app/atfwd/atfwd.apk
+com.oplus.athena	Athena	700		21		system_ext/app/Athena/Athena.apk
+com.oplus.battery	Battery	37		47		system_ext/app/Battery/Battery.apk
+com.oplus.bttestmode		2		4		system_ext/app/BTtestmode/BTtestmode.apk
+com.android.certinstaller	Certificate Installer	17000001		9		system_ext/app/CertInstaller/CertInstaller.apk
+com.oplus.acc.gac	Smart Cloud Boost	17000002		17		system_ext/app/CloudAccService/CloudAccService.apk
+com.oplus.voice.crs		37		2		system_ext/app/CrsVcrbtSwitch/CrsVcrbtSwitch.apk
+com.oplus.eid		37		0		system_ext/app/EidService/EidService.apk
+com.fido.asm		180925		2		system_ext/app/FidoAsm/FidoAsm.apk
+vendor.qti.frameworks.utils	FrameworksUtilsApp	1		5		system_ext/app/FrameworksUtilsSysService/FrameworksUtilsSysService.apk
+com.oplus.healthservice	healthservice	17001001		4		system_ext/app/HealthService/HealthService.apk
+com.android.htmlviewer	HTML Viewer	37		2		system_ext/app/HTMLViewer/HTMLViewer.apk
+vendor.qti.imsdatachannel		37		2		system_ext/app/ImsDataChannelService/ImsDataChannelService.apk
+com.android.keychain	Key chain	17000001		4		system_ext/app/KeyChain/KeyChain.apk
+com.oplus.keyguard.clock.base	KeyguardClockPlugin	1700060		3		system_ext/app/KeyguardClockBase/KeyguardClockBase.apk
+com.oplus.keyguard.personality.clocks	PersonalityClocks	1700060		2		system_ext/app/KeyguardPersonalityClocks/KeyguardPersonalityClocks.apk
+com.oplus.keyguard.style.widgets	Widgets	1700060		8		system_ext/app/KeyguardStyleWidget/KeyguardStyleWidget.apk
+com.oplus.lfeh	OplusLFEHer	17000008		1		system_ext/app/LFEHer/LFEHer.apk
+com.oplus.logtrial	OS Testing	170013014		42		system_ext/app/LogTrialCommercial/LogTrialCommercial.apk
+com.oplus.nas.acc		170000003		0		system_ext/app/NetworkAssistSys_plugin_CellularAcc/NetworkAssistSys_plugin_CellularAcc.apk
+com.oplus.nas.voice		170000003		0		system_ext/app/NetworkAssistSys_plugin_CellularCall/NetworkAssistSys_plugin_CellularCall.apk
+com.oplus.nas.data		170000006		0		system_ext/app/NetworkAssistSys_plugin_CellularData/NetworkAssistSys_plugin_CellularData.apk
+com.oplus.nas.dds		170000008		0		system_ext/app/NetworkAssistSys_plugin_CellularDataSwitch/NetworkAssistSys_plugin_CellularDataSwitch.apk
+com.oplus.nas.network		170000005		0		system_ext/app/NetworkAssistSys_plugin_CellularNetwork/NetworkAssistSys_plugin_CellularNetwork.apk
+com.oplus.nas.smartcommu		170000008		0		system_ext/app/NetworkAssistSys_plugin_CellularQoE/NetworkAssistSys_plugin_CellularQoE.apk
+com.oplus.nas.recovery		170000004		0		system_ext/app/NetworkAssistSys_plugin_CellularReg/NetworkAssistSys_plugin_CellularReg.apk
+com.oplus.nas.virtualdata	DCSSDK	170000007		1		system_ext/app/NetworkAssistSys_plugin_CellularVirtualData/NetworkAssistSys_plugin_CellularVirtualData.apk
+com.oplus.nhs	Network Health Service	170019		12		system_ext/app/NetworkHealthService/NetworkHealthService.apk
+com.oplus.sense.netprediction		170018		4		system_ext/app/NetworkSense_plugin_NetPrediction/NetworkSense_plugin_NetPrediction.apk
+com.oplus.sense.netscore		170049		3		system_ext/app/NetworkSense_plugin_NetScore/NetworkSense_plugin_NetScore.apk
+com.oplus.networksense		170024		1		system_ext/app/NetworkSense_plugin_NetworkSense/NetworkSense_plugin_NetworkSense.apk
+com.oplus.nwestimate		170008		0		system_ext/app/NetworkSense_plugin_NwEstimate/NetworkSense_plugin_NwEstimate.apk
+com.oplus.nfcengineertest		36		2		system_ext/app/NfcEngineerTest/NfcEngineerTest/NfcEngineerTest.apk
+com.oplus.notificationmanager	Manage notifications	17100018		23		system_ext/app/NotificationCenter/NotificationCenter.apk
+vendor.qti.data.ntnsatapp	NtnSatApp	17		1		system_ext/app/NtnSatApp/NtnSatApp.apk
+com.oplus.olc	Log Service	170001001		20		system_ext/app/Olc/Olc.apk
+com.oplus.atlas		17000001		16		system_ext/app/OplusAtlasService/OplusAtlasService.apk
+com.oplus.engineercamera	EngineerCamera	40		10		system_ext/app/OplusCommercialEngineerCamera/OplusCommercialEngineerCamera.apk
+com.oplus.engineermode	CommercialEngineerMode	17000000		29		system_ext/app/OplusCommercialEngineerMode/OplusCommercialEngineerMode.apk
+com.oplus.credential	Passkey	242		28		system_ext/app/OplusCredentialCN/OplusCredentialCN/OplusCredentialCN.apk
+com.oplus.engineernetwork	EngineerNetwork	150001		13		system_ext/app/OplusEngineerNetwork/OplusEngineerNetwork.apk
+com.oplus.eyeprotect	Eye Comfort	17000001		25		system_ext/app/OplusEyeProtect/OplusEyeProtect.apk
+com.oplus.pscanvas	Multi Windows	20		31		system_ext/app/OplusFlexibleWindowUI/OplusFlexibleWindowUI.apk
+com.oplus.gesture	Gestures & motions	8600		70		system_ext/app/OplusGestureUI/OplusGestureUI.apk
+com.oplus.location	Location Service	17260923		36		system_ext/app/OplusLocationService/OplusLocationService.apk
+com.oplus.multiapp	App Cloner	1700009		9		system_ext/app/OplusMultiApp/OplusMultiApp.apk
+com.oplus.qualityprotect	QualityProtect	17000025		11		system_ext/app/OplusQualityProtect/OplusQualityProtect.apk
+com.oplus.ota	Software update	17000004		44		system_ext/app/OTA/OTA.apk
+com.oplus.onetrace	OneTrace	251		17		system_ext/app/OTrace/OTrace.apk
+com.oplus.owkservice	OwkService	170001		4		system_ext/app/OwkService/OwkService.apk
+com.oplus.postmanservice	Diagnostics	16000002		49		system_ext/app/PostmanService/PostmanService.apk
+com.oplus.powermonitor	Power Monitor	17000010		13		system_ext/app/PowerMonitor/PowerMonitor.apk
+com.qualcomm.qti.powersavemode		37		1		system_ext/app/PowerSaveMode/PowerSaveMode.apk
+com.android.printspooler	Print Spooler	170300		22		system_ext/app/PrintSpooler/PrintSpooler.apk
+com.qti.qcc		6		11		system_ext/app/QCC/QCC.apk
+com.qualcomm.qti.telephonyservice		37		3		system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+com.oplus.rsmcsatellite	RsmcSatelliteAuth	37		0		system_ext/app/RsmcSatelliteAuth/RsmcSatelliteAuth.apk
+com.oplus.safecenter	Security Center	17003003		40		system_ext/app/SafeCenter/SafeCenter.apk
+com.oplus.sauhelper	SAUHelper	170000		1		system_ext/app/SAUHelper/SAUHelper.apk
+com.oplus.securitypermission	Permission manager	1701002		44		system_ext/app/SecurityPermission/SecurityPermission.apk
+com.tencent.soter.soterserver	SoterService	10200		0		system_ext/app/SoterService/SoterService.apk
+com.android.stk	SIM Toolkit	17000025		13		system_ext/app/Stk/Stk.apk
+com.oplus.appsense		170029		0		system_ext/app/SubsysPlugins_plugin_AppSense/SubsysPlugins_plugin_AppSense.apk
+com.oplus.tai.borderpresearch	BorderPreSearch	170003		0		system_ext/app/SubsysPlugins_plugin_BorderPreSearch/SubsysPlugins_plugin_BorderPreSearch.apk
+com.oplus.cell.map		170013		0		system_ext/app/SubsysPlugins_plugin_CellMap/SubsysPlugins_plugin_CellMap.apk
+com.oplus.cellularqoe	CellularQoe	170003		0		system_ext/app/SubsysPlugins_plugin_CellularQoe/SubsysPlugins_plugin_CellularQoe.apk
+com.oplus.motionsense		170013		0		system_ext/app/SubsysPlugins_plugin_MotionSense/SubsysPlugins_plugin_MotionSense.apk
+com.oplus.tai.wifiqoe	WifiQoe	170003		0		system_ext/app/SubsysPlugins_plugin_WifiQoe/SubsysPlugins_plugin_WifiQoe.apk
+com.oplus.subsys		37		20		system_ext/app/SubsystemApp/SubsystemApp.apk
+com.oplus.sau	System Upgrade Services	17000026		18		system_ext/app/SystemAppUpdateService/SystemAppUpdateService.apk
+com.oplus.systemui.plugins	SystemUIPlugin	17000002		9		system_ext/app/SystemUIPlugin/SystemUIPlugin.apk
+com.oplus.ttsatellite	TTSatelliteAuth	37		0		system_ext/app/TTSatelliteAuth/TTSatelliteAuth.apk
+com.fido.uafclient	FIDO UAF1.0 Client	9		3		system_ext/app/UAFClient/UAFClient/UAFClient.apk
+com.oplus.uxdesign	Wallpapers & style	17000020		31		system_ext/app/UXDesign/UXDesign.apk
+com.wapi.wapicertmanage		37		1		system_ext/app/WapiCertManage/WapiCertManage.apk
+com.qualcomm.qti.workloadclassifier		37		3		system_ext/app/workloadclassifier/workloadclassifier.apk
+com.android.security.fsverity_metadata.system_ext		37		0		system_ext/etc/security/fsverity/BuildManifestSystemExt.apk
+oplus		80		0		system_ext/framework/oplus-framework-res.apk
+com.google.android.cellbroadcastreceiver.overlay	CellBroadcastReceiverModuleOverlay	1000008		0		system_ext/overlay/CellBroadcastReceiverModuleOverlay/CellBroadcastReceiverModuleOverlay.apk
+com.google.android.cellbroadcastservice.overlay	CellBroadcastServiceModuleOverlay	1000006		0		system_ext/overlay/CellBroadcastServiceModuleOverlay/CellBroadcastServiceModuleOverlay.apk
+android.frameworkres.overlay.Network		37		0		system_ext/overlay/framework_res_overlay_Network.apk
+com.google.android.networkstack.overlay		1		0		system_ext/overlay/NetworkStackOverlayCHN.apk
+com.android.bluetooth.oplus.overlay		37		0		system_ext/overlay/OplusBluetoothResource.apk
+com.oplus.framework_bluetooth.overlay		37		0		system_ext/overlay/OplusFrameworkBluetoothResource.apk
+com.google.android.permissioncontroller.overlay.oplus		1700001		0		system_ext/overlay/OplusPermissionControllerOverlay/OplusPermissionControllerOverlay.apk
+com.android.wifi.resources.overlay.oplus		37		0		system_ext/overlay/OplusWifiResource.apk
+com.android.safetycenter.styles.overlay		1600001		0		system_ext/overlay/SafetyCenterStylesOverlay/SafetyCenterStylesOverlay.apk
+com.android.connectivity.resources.overlay.oplus		37		0		system_ext/overlay/ServiceConnectivityResourcesOverlayCHN.apk
+com.oplus.appbooster	App Booster	1700005		11		system_ext/priv-app/AppBooster/AppBooster.apk
+com.android.avatarpicker		37		3		system_ext/priv-app/AvatarPicker/AvatarPicker.apk
+com.oplus.beidouservice		37		6		system_ext/priv-app/BeidouMsgService/BeidouMsgService.apk
+com.android.providers.blockednumber	Blocked Numbers Storage	37		2		system_ext/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk
+com.oplus.blur	PostEffect	170000008		6		system_ext/priv-app/BlurService/BlurService.apk
+com.android.bips	Default Print Service	170300		18		system_ext/priv-app/BuiltInPrintService/BuiltInPrintService.apk
+com.android.providers.calendar	Calendar storage	17002000		37		system_ext/priv-app/CalendarProvider/CalendarProvider.apk
+com.android.calllogbackup	Call Log Backup/Restore	37		2		system_ext/priv-app/CallLogBackup/CallLogBackup.apk
+com.android.carrierconfig		1		4		system_ext/priv-app/CarrierConfig/CarrierConfig.apk
+com.android.cellbroadcastreceiver.module	Wireless emergency alerts	1700010010		31		system_ext/priv-app/CellBroadcastReceiver/CellBroadcastReceiver.apk
+com.android.cellbroadcastservice	Cell Broadcast Service	1700010010		10		system_ext/priv-app/CellBroadcastService/CellBroadcastService.apk
+com.qualcomm.location	EmergencyLocServices	1		21		system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+com.android.contactspicker	Contacts Picker	17005005		9		system_ext/priv-app/ContactsPicker/ContactsPicker.apk
+com.android.providers.contacts	Contacts Storage	17020010		38		system_ext/priv-app/ContactsProvider/ContactsProvider.apk
+com.qti.dcf		1		0		system_ext/priv-app/dcf/dcf.apk
+com.oplus.deepthinker	Intelligent Services	17000040		42		system_ext/priv-app/DeepThinker/DeepThinker.apk
+com.oplus.dfs	Cross-Device File Management	17000001		46		system_ext/priv-app/DFS/DFS.apk
+com.android.providers.downloads	Download Manager	17000000		27		system_ext/priv-app/DownloadProvider/DownloadProvider.apk
+com.qti.dpmserviceapp		37		6		system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+org.codeaurora.ims		1		26		system_ext/priv-app/ims/ims.apk
+com.android.mms.service	Information services	17000060		12		system_ext/priv-app/MmsService/MmsService.apk
+com.oplus.appplatform	App Services	170000		25		system_ext/priv-app/OplusAppPlatform/OplusAppPlatform.apk
+com.oplus.exsystemservice	System Service	10050		45		system_ext/priv-app/OplusExSystemService/OplusExSystemService.apk
+com.android.launcher	System Launcher	170050004		129		system_ext/priv-app/OplusLauncher/OplusLauncher.apk
+com.oplus.nearcomm	OplusNearComm	37		5		system_ext/priv-app/OplusNearComm/OplusNearComm.apk
+com.oplus.nrMode		37		0		system_ext/priv-app/OplusNrMode/OplusNrMode.apk
+com.oplus.virtualcomm	OplusVirtualComm	37		0		system_ext/priv-app/OplusVirtualComm/OplusVirtualComm.apk
+com.android.packageinstaller	Package installer	17000001		55		system_ext/priv-app/OppoPackageInstaller/OppoPackageInstaller.apk
+com.qualcomm.qcrilmsgtunnel		37		6		system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+com.android.settings.intelligence	Settings Suggestions	17000000		26		system_ext/priv-app/SettingsIntelligence/SettingsIntelligence.apk
+com.android.providers.settings	Settings Storage	37		4		system_ext/priv-app/SettingsProvider/SettingsProvider.apk
+com.android.settings	Settings	17000000		191		system_ext/priv-app/Settings/Settings.apk
+com.android.storagemanager		37		15		system_ext/priv-app/StorageManager/StorageManager.apk
+com.oplus.plugin		37		0		system_ext/priv-app/SubsysInterfacePlugin/SubsysInterfacePlugin.apk
+com.android.systemui		179902		276		system_ext/priv-app/SystemUI/SystemUI.apk
+com.android.server.telecom	Call Management	17008010		69		system_ext/priv-app/Telecom/Telecom.apk
+com.android.providers.telephony	Phone Call/SMS Storage	37		24		system_ext/priv-app/TelephonyProvider/TelephonyProvider.apk
+com.android.phone	Phone Services	17009005		205		system_ext/priv-app/TeleService/TeleService.apk
+com.oplus.trafficmonitor	Data usage	17006001		21		system_ext/priv-app/TrafficMonitor/TrafficMonitor.apk
+com.oplus.upgradeguide	Update Highlights	17000002		21		system_ext/priv-app/UpgradeGuide/UpgradeGuide.apk
+com.oplus.vdc	VDC Service	17000008		40		system_ext/priv-app/VDCService/VDCService.apk
+com.oplus.virtualcomm2		37		0		system_ext/priv-app/VirtualCommService/VirtualCommService.apk
+com.android.vpndialogs	VpnDialogs	17000001		6		system_ext/priv-app/VpnDialogs/VpnDialogs.apk
+com.qualcomm.wfd.service	Wfd Service	2		13		system_ext/priv-app/WfdService/WfdService.apk
+com.oplus.wirelesssettings	Wireless Settings	17006005		76		system_ext/priv-app/WirelessSettings/WirelessSettings.apk
+com.qualcomm.qti.xrcb	XRCB	37		0		system_ext/priv-app/xrcbservice/xrcbservice.apk
+com.qualcomm.qti.xrvd.service	XRVD	37		2		system_ext/priv-app/xrvdservice/xrvdservice.apk
+com.android.appsearch.aiseal.config		37		0		system/system/app/AppSearchAiSealConfig/AppSearchAiSealConfig.apk
+com.android.dreams.basic		37		0		system/system/app/BasicDreams/BasicDreams.apk
+com.android.bluetooth		37		92		system/system/app/Bluetooth/Bluetooth.apk
+com.android.bluetoothmidiservice		37		5		system/system/app/BluetoothMidiService/BluetoothMidiService.apk
+com.android.bookmarkprovider		37		0		system/system/app/BookmarkProvider/BookmarkProvider.apk
+com.android.cameraextensions		37		2		system/system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk
+com.android.captiveportallogin	Captive Portal Login	370399999		11		system/system/app/CaptivePortalLogin/CaptivePortalLogin.apk
+com.android.carrierdefaultapp		37		10		system/system/app/CarrierDefaultApp/CarrierDefaultApp.apk
+com.android.companiondevicemanager		37		14		system/system/app/CompanionDeviceManager/CompanionDeviceManager.apk
+com.microsoftsdk.crossdeviceservicebroker		37		8		system/system/app/CrossDeviceServiceBroker/CrossDeviceServiceBroker.apk
+com.android.egg		12		8		system/system/app/EasterEgg/EasterEgg.apk
+com.android.oemextensions		37		2		system/system/app/ExtensionsService/ExtensionsService.apk
+com.android.pacprocessor		37		2		system/system/app/PacProcessor/PacProcessor.apk
+com.android.se	SecureElementApplication	170000000		7		system/system/app/SecureElement/SecureElement.apk
+com.android.simappdialog		37		1		system/system/app/SimAppDialog/SimAppDialog.apk
+com.android.traceur		2		21		system/system/app/Traceur/Traceur.apk
+com.android.wallpaperbackup		37		4		system/system/app/WallpaperBackup/WallpaperBackup.apk
+com.android.security.fsverity_metadata.system		37		0		system/system/etc/security/fsverity/BuildManifest.apk
+android		37		39		system/system/framework/framework-res.apk
+com.android.backupconfirm		37		3		system/system/priv-app/BackupRestoreConfirmation/BackupRestoreConfirmation.apk
+com.android.cellbroadcastreceiver		300000000		1		system/system/priv-app/CellBroadcastLegacyApp/CellBroadcastLegacyApp.apk
+com.android.credentialmanager		37		10		system/system/priv-app/CredentialManager/CredentialManager.apk
+com.android.DeviceAsWebcam		37		5		system/system/priv-app/DeviceAsWebcam/DeviceAsWebcam.apk
+com.android.documentsui	Files	37		19		system/system/priv-app/DocumentsUI/DocumentsUI.apk
+com.android.providers.downloads.ui		37		2		system/system/priv-app/DownloadProviderUi/DownloadProviderUi.apk
+com.android.dynsystem		37		8		system/system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk
+com.android.providers.contactkeys		37		0		system/system/priv-app/E2eeContactKeysProvider/E2eeContactKeysProvider.apk
+com.android.externalstorage		37		5		system/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk
+com.android.eyedropper		37		4		system/system/priv-app/EyeDropper/EyeDropper.apk
+com.android.location.fused		37		8		system/system/priv-app/FusedLocation/FusedLocation.apk
+com.android.inputdevices		37		0		system/system/priv-app/InputDevices/InputDevices.apk
+com.android.intentresolver				31		system/system/priv-app/IntentResolver/IntentResolver.apk
+com.android.localtransport		37		0		system/system/priv-app/LocalTransport/LocalTransport.apk
+com.android.managedprovisioning		37		44		system/system/priv-app/ManagedProvisioning/ManagedProvisioning.apk
+com.android.mtp		37		13		system/system/priv-app/MtpService/MtpService.apk
+com.android.musicfx		10400		3		system/system/priv-app/MusicFX/MusicFX.apk
+com.android.networkstack	Network manager	370399999		15		system/system/priv-app/NetworkStack/NetworkStack.apk
+com.android.nfc		170000015		75		system/system/priv-app/NfcNci/NfcNci.apk
+com.android.ons		37		2		system/system/priv-app/ONS/ONS.apk
+com.android.privatespace		37		7		system/system/priv-app/PrivateSpace/PrivateSpace.apk
+com.android.proxyhandler		37		3		system/system/priv-app/ProxyHandler/ProxyHandler.apk
+com.android.sharedstoragebackup		16000000		4		system/system/priv-app/SharedStorageBackup/SharedStorageBackup.apk
+com.android.shell		37		630		system/system/priv-app/Shell/Shell.apk
+com.android.apps.tag		101		10		system/system/priv-app/Tag/Tag.apk
+com.android.providers.userdictionary		37		1		system/system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk
