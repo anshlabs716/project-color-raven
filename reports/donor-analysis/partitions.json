@@ -1,0 +1,563 @@
+{
+  "minor_version": 9,
+  "block_size": 4096,
+  "partitions": [
+    {
+      "name": "system",
+      "operations": 501,
+      "size": 1048903680,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "system_ext",
+      "operations": 446,
+      "size": 934256640,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "product",
+      "operations": 81,
+      "size": 168960000,
+      "types": [
+        "REPLACE",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta_system",
+      "operations": 1,
+      "size": 4096,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "boot",
+      "operations": 48,
+      "size": 100663296,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "init_boot",
+      "operations": 4,
+      "size": 8388608,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "vendor_boot",
+      "operations": 48,
+      "size": 100663296,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "recovery",
+      "operations": 50,
+      "size": 104857600,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "vendor",
+      "operations": 222,
+      "size": 463638528,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vendor_dlkm",
+      "operations": 75,
+      "size": 155230208,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "system_dlkm",
+      "operations": 7,
+      "size": 14503936,
+      "types": [
+        "REPLACE",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "odm",
+      "operations": 1434,
+      "size": 3007156224,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "dtbo",
+      "operations": 12,
+      "size": 25165824,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta",
+      "operations": 1,
+      "size": 12288,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta_vendor",
+      "operations": 1,
+      "size": 4096,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "xbl",
+      "operations": 1,
+      "size": 1183744,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "xbl_config",
+      "operations": 1,
+      "size": 409600,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "engineering_cdt",
+      "operations": 1,
+      "size": 1048576,
+      "types": [
+        "REPLACE_BZ"
+      ]
+    },
+    {
+      "name": "uefi",
+      "operations": 2,
+      "size": 2797568,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "aop",
+      "operations": 1,
+      "size": 393216,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "aop_config",
+      "operations": 1,
+      "size": 28672,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tz",
+      "operations": 3,
+      "size": 4227072,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "hyp",
+      "operations": 1,
+      "size": 1658880,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "modem",
+      "operations": 175,
+      "size": 367001600,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "bluetooth",
+      "operations": 4,
+      "size": 8388608,
+      "types": [
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "abl",
+      "operations": 1,
+      "size": 278528,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "dsp",
+      "operations": 37,
+      "size": 77594624,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "keymaster",
+      "operations": 2,
+      "size": 3354624,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "spuservice",
+      "operations": 1,
+      "size": 94208,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "devcfg",
+      "operations": 1,
+      "size": 61440,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "qupfw",
+      "operations": 1,
+      "size": 69632,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "uefisecapp",
+      "operations": 1,
+      "size": 208896,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "imagefv",
+      "operations": 1,
+      "size": 114688,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "shrm",
+      "operations": 1,
+      "size": 184320,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "cpucp",
+      "operations": 1,
+      "size": 446464,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "featenabler",
+      "operations": 1,
+      "size": 106496,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "oplus_sec",
+      "operations": 1,
+      "size": 1040384,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "splash",
+      "operations": 8,
+      "size": 15507456,
+      "types": [
+        "REPLACE",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "xbl_ramdump",
+      "operations": 1,
+      "size": 1040384,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "cpucp_dtb",
+      "operations": 1,
+      "size": 16384,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "soccp_debug",
+      "operations": 1,
+      "size": 73728,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "soccp_dcd",
+      "operations": 1,
+      "size": 16384,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "pdp",
+      "operations": 1,
+      "size": 356352,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "pdp_cdb",
+      "operations": 1,
+      "size": 16384,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_product",
+      "operations": 695,
+      "size": 1457475584,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "my_engineering",
+      "operations": 1,
+      "size": 335872,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_stock",
+      "operations": 2271,
+      "size": 4761227264,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "my_heytap",
+      "operations": 1,
+      "size": 335872,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_carrier",
+      "operations": 1,
+      "size": 335872,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_region",
+      "operations": 4,
+      "size": 7258112,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_bigball",
+      "operations": 1,
+      "size": 335872,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "my_manifest",
+      "operations": 1,
+      "size": 675840,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tme_seq_patch",
+      "operations": 1,
+      "size": 8192,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "hyp_ac_config",
+      "operations": 1,
+      "size": 77824,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "multiimgoem",
+      "operations": 1,
+      "size": 12288,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tme_fw",
+      "operations": 1,
+      "size": 204800,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "soccp",
+      "operations": 4,
+      "size": 8388608,
+      "types": [
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "multiimgqti",
+      "operations": 1,
+      "size": 12288,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tme_config",
+      "operations": 1,
+      "size": 45056,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "xbl_ac_config",
+      "operations": 1,
+      "size": 45056,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "secretkeeper",
+      "operations": 1,
+      "size": 1056768,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tz_ac_config",
+      "operations": 1,
+      "size": 65536,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tz_qti_config",
+      "operations": 1,
+      "size": 139264,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "dcp",
+      "operations": 4,
+      "size": 8388608,
+      "types": [
+        "REPLACE_XZ",
+        "ZERO"
+      ]
+    },
+    {
+      "name": "pvmfw",
+      "operations": 1,
+      "size": 901120,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    }
+  ]
+}

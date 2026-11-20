@@ -1,0 +1,188 @@
+{
+  "minor_version": 0,
+  "block_size": 4096,
+  "partitions": [
+    {
+      "name": "abl",
+      "operations": 1,
+      "size": 1888256,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "bl1",
+      "operations": 1,
+      "size": 12288,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "bl2",
+      "operations": 1,
+      "size": 544768,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "bl31",
+      "operations": 1,
+      "size": 90112,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "boot",
+      "operations": 32,
+      "size": 67108864,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "dtbo",
+      "operations": 8,
+      "size": 16777216,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "gsa",
+      "operations": 1,
+      "size": 282624,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "ldfw",
+      "operations": 2,
+      "size": 4096000,
+      "types": [
+        "REPLACE",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "modem",
+      "operations": 47,
+      "size": 97701888,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "pbl",
+      "operations": 1,
+      "size": 49152,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "product",
+      "operations": 1043,
+      "size": 2185519104,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "pvmfw",
+      "operations": 1,
+      "size": 1048576,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "system",
+      "operations": 610,
+      "size": 1278963712,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "system_ext",
+      "operations": 260,
+      "size": 543285248,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "tzsw",
+      "operations": 3,
+      "size": 4943872,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta",
+      "operations": 1,
+      "size": 8192,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta_system",
+      "operations": 1,
+      "size": 4096,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vbmeta_vendor",
+      "operations": 1,
+      "size": 4096,
+      "types": [
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vendor",
+      "operations": 324,
+      "size": 678408192,
+      "types": [
+        "REPLACE",
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vendor_boot",
+      "operations": 32,
+      "size": 67108864,
+      "types": [
+        "REPLACE_BZ",
+        "REPLACE_XZ"
+      ]
+    },
+    {
+      "name": "vendor_dlkm",
+      "operations": 27,
+      "size": 55865344,
+      "types": [
+        "REPLACE",
+        "REPLACE_XZ"
+      ]
+    }
+  ]
+}
