@@ -10,9 +10,7 @@ on top of a **LineageOS 24 / Android 17** base — as a real ROM, not a theme.
 | **Target device** | Google Pixel 6 Pro (raven), Tensor GS101 |
 | **Donor ROM** | OnePlus 15 ColorOS 17 China, `PLK110_17.0.1.201(CN01)` |
 | **Base** | LineageOS 24 / Android 17 (SDK 37) |
-| **Host** | Debian 13 (trixie), x86_64, Intel N150, 8 GB RAM |
-| **Developer** | ansh |
-| **Phone's current ROM** | Project Infinity-X — **must not be modified without explicit approval** |
+| **Host** | Debian 13 (trixie), x86_64, Intel N150, 8 GB RAM if i can do it on these specs you can too! |
 
 ## Goal
 
