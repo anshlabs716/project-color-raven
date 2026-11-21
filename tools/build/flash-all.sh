@@ -1,16 +1,23 @@
 #!/usr/bin/env bash
 #
-# Project Color Raven v0.1 — raven (Google Pixel 6 Pro)
+# Project Color Raven v0.2 — raven (Google Pixel 6 Pro)
 #
 # Flashes: LineageOS 24 foundation (boot chain + Tensor vendor) with the
 #          ColorOS 17 donor userspace (system / system_ext / product, EROFS).
 #
+# v0.2 FIXES over v0.1 (root cause of "boots then reboots to fastboot"):
+#   * fstab: system/system_ext/product now declare erofs (donor images are
+#     EROFS; v0.1's fstab said ext4 -> first-stage mount failed -> reboot).
+#   * system.img repacked FLAT (donor's raw image is root-style; content
+#     nested under system/ would land at /system/system/... and second-stage
+#     init could never find /system/bin/init).
+#   * androidboot.selinux=permissive added to the bootconfig.
+#
 # SAFETY-CRITICAL ORDER (audit v2):
-#   1. Logical partitions are flashed FIRST, inside fastbootd running under
-#      the phone's CURRENT (fully consistent) boot chain — fastbootd never
-#      boots with a half-updated device.
-#   2. Then a reboot to BOOTLOADER (never boots an OS) for the boot chain.
-#   3. Then one final reboot into the fully flashed device.
+#   1. Script enters fastbootd ITSELF via `fastboot reboot fastboot`, then
+#      flashes logical partitions under the CURRENT (consistent) boot chain.
+#   2. Reboot to BOOTLOADER (never boots an OS) for the boot chain.
+#   3. One final reboot into the fully flashed device.
 #   No step ever boots the OS with a mixed old/new state.
 #
 # SAFETY RULES (hard-coded):
@@ -33,7 +40,7 @@ command -v fastboot >/dev/null 2>&1 || fail "fastboot not found in PATH"
 [ -d "$IMG" ] || fail "images/ directory missing"
 
 echo -e "${YLW}==============================================================${NC}"
-echo -e "${YLW} Project Color Raven v0.1 — UNTESTED experimental build${NC}"
+echo -e "${YLW} Project Color Raven v0.2 — UNTESTED experimental build${NC}"
 echo -e "${YLW} Target device : raven (Google Pixel 6 Pro)${NC}"
 echo -e "${YLW} Order         : fastbootd (logical) -> bootloader (boot chain)${NC}"
 echo -e "${YLW} What is safe  : no wipe/erase/format commands exist in this script.${NC}"
@@ -55,23 +62,56 @@ is_raven() {
     echo "Confirmed device: raven"
 }
 
+wait_fastboot() { # wait until a fastboot device answers (max ~60s)
+    local i=0
+    until fastboot getvar product >/dev/null 2>&1; do
+        i=$((i+1)); [ "$i" -gt 30 ] && fail "no fastboot device after 60s"
+        sleep 2
+    done
+}
+
+# ---- Step 0: find the device (any of: fastbootd / bootloader / Android) ----
 echo
-echo "Enter fastbootd: from the RUNNING system run 'adb reboot fastboot',"
-echo "or from bootloader mode run 'fastboot reboot fastboot' (BEFORE this"
-echo "script has flashed anything, so the old chain boots fastbootd)."
-echo "Press Enter when fastbootd is up."
-read -r
+echo ">>> Step 0 — locating device"
+if ! fastboot getvar product >/dev/null 2>&1; then
+    if command -v adb >/dev/null 2>&1 && adb get-state >/dev/null 2>&1; then
+        echo "Device found on adb — rebooting to bootloader (adb reboot bootloader)"
+        adb reboot bootloader
+        sleep 3
+    else
+        fail "no device on fastboot or adb — boot it to bootloader first: adb reboot bootloader"
+    fi
+fi
+wait_fastboot
 
-# ---- Stage 1: fastbootd — logical (dynamic) partitions ----------------------
-is_raven
+# ---- Step 1: enter fastbootd automatically -------------------------------
 US="$(fastboot getvar is-userspace 2>&1 | grep -m1 '^is-userspace:' | awk '{print $2}' | tr -d '\r')"
-[ "$US" = "yes" ] || fail "not in fastbootd (userspace) mode — re-enter fastbootd and retry"
+if [ "$US" != "yes" ]; then
+    echo ">>> Step 1 — entering fastbootd: fastboot reboot fastboot"
+    fastboot reboot fastboot
+    i=0
+    while true; do
+        US="$(fastboot getvar is-userspace 2>&1 | grep -m1 '^is-userspace:' | awk '{print $2}' | tr -d '\r' || true)"
+        [ "$US" = "yes" ] && break
+        i=$((i+1)); [ "$i" -gt 30 ] && fail "fastbootd did not come up after 60s"
+        sleep 2
+    done
+else
+    echo ">>> Step 1 — already in fastbootd"
+fi
+is_raven
 
+echo
+echo "Type FLASH-RAVEN to proceed:"
+read -r CONFIRM
+[ "$CONFIRM" = "FLASH-RAVEN" ] || { echo "Aborted — device untouched."; exit 1; }
+
+# ---- Stage 2: fastbootd — logical (dynamic) partitions --------------------
 echo
 echo ">>> Stage 1/2 — logical partitions (super) via fastbootd"
 # fastbootd auto-resizes logical partitions to image size; super has ~3.8 GiB
 # headroom (verified against super_empty.img metadata).
-fastboot flash system      "$IMG/system.img"        # ColorOS 17 donor (EROFS)
+fastboot flash system      "$IMG/system.img"        # ColorOS 17 donor (EROFS, FLAT)
 fastboot flash system_ext  "$IMG/system_ext.img"    # ColorOS 17 donor (EROFS)
 fastboot flash product     "$IMG/product.img"       # ColorOS 17 donor (EROFS)
 fastboot flash vendor      "$IMG/vendor.img"        # LineageOS Tensor HALs
@@ -81,11 +121,10 @@ echo
 echo ">>> Rebooting to BOOTLOADER (does not boot the OS)"
 fastboot reboot bootloader
 echo "Waiting for bootloader..."
-sleep 6
-until fastboot getvar product >/dev/null 2>&1; do sleep 2; done
+wait_fastboot
 is_raven
 
-# ---- Stage 2: bootloader — boot chain ---------------------------------------
+# ---- Stage 3: bootloader — boot chain --------------------------------------
 echo
 echo ">>> Stage 2/2 — boot chain (bootloader mode)"
 fastboot flash boot        "$IMG/boot.img"
