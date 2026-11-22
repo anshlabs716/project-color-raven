@@ -1,4 +1,4 @@
-# Project Color Raven
+# Project Color Raven (YES THIS IS VIBECODED BUT IM JEALOUS OF COLOR OS THATS THE FLAME THATS NOT GONNA MAKE ME STOP)
 
 Porting **ColorOS 17** (OnePlus 15, PLK110, China) onto the **Google Pixel 6 Pro (raven)**
 on top of a **LineageOS 24 / Android 17** base — as a real ROM, not a theme.
